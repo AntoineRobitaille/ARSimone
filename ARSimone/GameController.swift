@@ -27,15 +27,15 @@ class GameController: UIViewController {
         //----------------
         addRandomButtonToArray()
         //----------------
-
-
+        simoneBrain.startGame(arrOfRandomButtons)
+        //----------------
+        score.text = simoneBrain.scoreKeeper
+        //----------------
     }
-    
     //-------------------------------
     func addRandomButtonToArray(){
-        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count)
+        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count - 1)
         arrOfRandomButtons.append(arrOfButtons[randomIndex])
-        print(arrOfRandomButtons)
     }
     //-------------------------------
     override func didReceiveMemoryWarning() {
