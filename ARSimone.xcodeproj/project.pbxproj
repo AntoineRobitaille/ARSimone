@@ -26,6 +26,8 @@
 		9BE816371F0ABCE80055134F /* WrongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE816361F0ABCE80055134F /* WrongController.swift */; };
 		9BE816391F0ABD550055134F /* SimoneBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE816381F0ABD550055134F /* SimoneBrain.swift */; };
 		9BE8163B1F0ABDAB0055134F /* SingletonShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8163A1F0ABDAB0055134F /* SingletonShared.swift */; };
+		9BE8163D1F0AE9490055134F /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8163C1F0AE9490055134F /* reset.png */; };
+		9BE8163F1F0AE9CB0055134F /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8163E1F0AE9CB0055134F /* 120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		9BE816361F0ABCE80055134F /* WrongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrongController.swift; path = ../WrongController.swift; sourceTree = "<group>"; };
 		9BE816381F0ABD550055134F /* SimoneBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimoneBrain.swift; sourceTree = "<group>"; };
 		9BE8163A1F0ABDAB0055134F /* SingletonShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonShared.swift; sourceTree = "<group>"; };
+		9BE8163C1F0AE9490055134F /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = images/reset.png; sourceTree = "<group>"; };
+		9BE8163E1F0AE9CB0055134F /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = images/120.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		9B8A35161EF3103400F46034 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8163E1F0AE9CB0055134F /* 120.png */,
+				9BE8163C1F0AE9490055134F /* reset.png */,
 				9BE816221F0AB91C0055134F /* b2.png */,
 				9BE816231F0AB91C0055134F /* b8.png */,
 				9BE816241F0AB91C0055134F /* bar.png */,
@@ -196,10 +202,12 @@
 				9BE816331F0AB91C0055134F /* simone.png in Resources */,
 				9BE816301F0AB91C0055134F /* new.png in Resources */,
 				9BE816311F0AB91C0055134F /* play.png in Resources */,
+				9BE8163D1F0AE9490055134F /* reset.png in Resources */,
 				9BE816321F0AB91C0055134F /* ring.png in Resources */,
 				9BE8162F1F0AB91C0055134F /* icon_120.png in Resources */,
 				9BC4BC581EEF08CC0044A131 /* Assets.xcassets in Resources */,
 				9BE8162E1F0AB91C0055134F /* high.png in Resources */,
+				9BE8163F1F0AE9CB0055134F /* 120.png in Resources */,
 				9BE8162D1F0AB91C0055134F /* bar.png in Resources */,
 				9BC4BC561EEF08CC0044A131 /* Main.storyboard in Resources */,
 			);
