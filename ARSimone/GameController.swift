@@ -13,10 +13,30 @@ class GameController: UIViewController {
     @IBOutlet weak var bout8: UIButton!
     @IBOutlet weak var bout9: UIButton!
     @IBOutlet weak var score: UILabel!
+    //-------------------------------
+    var arrOfButtons: [UIButton]!
+    var arrOfRandomButtons: [UIButton] = []
+    //----------------
+    let simoneBrain = SimoneBrain()
+    //-------------------------------
     override func viewDidLoad() {
+        //----------------
         super.viewDidLoad()
+        //----------------
+        arrOfButtons = [bout1, bout2, bout3, bout4, bout5, bout6, bout7, bout8, bout9]
+        //----------------
+        addRandomButtonToArray()
+        //----------------
+
+
     }
     
+    //-------------------------------
+    func addRandomButtonToArray(){
+        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count)
+        arrOfRandomButtons.append(arrOfButtons[randomIndex])
+        print(arrOfRandomButtons)
+    }
     //-------------------------------
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,3 +48,10 @@ class GameController: UIViewController {
 
 }
 //===============================
+
+
+
+
+
+
+
