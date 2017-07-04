@@ -13,29 +13,17 @@ class GameController: UIViewController {
     @IBOutlet weak var bout8: UIButton!
     @IBOutlet weak var bout9: UIButton!
     @IBOutlet weak var score: UILabel!
-    //-------------------------------
-    var arrOfButtons: [UIButton]!
-    var arrOfRandomButtons: [UIButton] = []
-    //----------------
-    let simoneBrain = SimoneBrain()
+    var arrOfGameColors: [UIButton]!
+    var simoneBrain: SimoneBrain!
     //-------------------------------
     override func viewDidLoad() {
-        //----------------
         super.viewDidLoad()
-        //----------------
-        arrOfButtons = [bout1, bout2, bout3, bout4, bout5, bout6, bout7, bout8, bout9]
-        //----------------
-        addRandomButtonToArray()
-        //----------------
-        simoneBrain.startGame(arrOfRandomButtons)
-        //----------------
+        arrOfGameColors = [bout1, bout2, bout3, bout4, bout5, bout6, bout7, bout8, bout9]
+        simoneBrain = SimoneBrain(gameColors: arrOfGameColors)
+        simoneBrain.addRandomColorToArray()
+        simoneBrain.startGame()
         score.text = simoneBrain.scoreKeeper
-        //----------------
-    }
-    //-------------------------------
-    func addRandomButtonToArray(){
-        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count - 1)
-        arrOfRandomButtons.append(arrOfButtons[randomIndex])
+        simoneBrain.loadArrayForComparison()
     }
     //-------------------------------
     override func didReceiveMemoryWarning() {
@@ -43,11 +31,47 @@ class GameController: UIViewController {
     }
     //-------------------------------
     @IBAction func buttonManager(_ sender: UIButton) {
+        if !simoneBrain.userTurnToPlay {
+            return
+        }
+        if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
+            simoneBrain.arrCopyOfRandomColorsToCompare = simoneBrain.arrRandomColors
+        }
+        if !simoneBrain.verification(arrOfGameColors[sender.tag]) {
+            performSegue(withIdentifier: "wrong", sender: nil)
+        }
+        simoneBrain.scoreKeeperCounter! += 1
+        score.text = "\(simoneBrain.scoreKeeperCounter!)"
     }
     //-------------------------------
 
 }
 //===============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
