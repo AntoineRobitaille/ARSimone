@@ -87,6 +87,17 @@
                                     <constraint firstItem="4an-Yb-JSv" firstAttribute="centerX" secondItem="fom-qy-jse" secondAttribute="centerX" id="tmj-w0-N4L"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-yd-uK4">
+                                <rect key="frame" x="85.5" y="394" width="204" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="4Hu-dF-0Vg"/>
+                                    <constraint firstAttribute="width" constant="204" id="PdY-Gr-xKr"/>
+                                </constraints>
+                                <state key="normal" image="reset.png"/>
+                                <connections>
+                                    <action selector="resetHighscore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7e-e9-WOz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -96,11 +107,13 @@
                             <constraint firstItem="fom-qy-jse" firstAttribute="centerX" secondItem="dUr-8C-iKE" secondAttribute="centerX" id="LIM-mY-rTJ"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQ1-ci-n1O"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgR-DI-tyO"/>
+                            <constraint firstItem="cRV-yd-uK4" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="bottom" constant="8" id="h5e-2i-geT"/>
                             <constraint firstItem="Pxt-1t-D1z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iPE-P8-iZ0"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="top" id="kDX-WH-ffb"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lGJ-5n-ERW"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nEH-nS-PWT"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8b-yE-wje"/>
+                            <constraint firstItem="cRV-yd-uK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSk-K6-rgG"/>
                             <constraint firstAttribute="trailing" secondItem="dUr-8C-iKE" secondAttribute="trailing" id="vKV-ln-GuG"/>
                         </constraints>
                     </view>
@@ -251,7 +264,7 @@
                                 <rect key="frame" x="0.0" y="483.5" width="375" height="183.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ring.png" translatesAutoresizingMaskIntoConstraints="NO" id="VrS-fO-ULZ">
-                                        <rect key="frame" x="135" y="40" width="105" height="105"/>
+                                        <rect key="frame" x="135" y="39.5" width="105" height="105"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="105" id="UkU-PD-Oc1"/>
                                             <constraint firstAttribute="width" constant="105" id="Upw-Az-qfe"/>
@@ -274,7 +287,7 @@
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gC-jt-dXK">
-                                        <rect key="frame" x="155" y="56" width="64" height="72"/>
+                                        <rect key="frame" x="155" y="56.5" width="64" height="72"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="64" id="4cU-9j-4iG"/>
                                             <constraint firstAttribute="height" constant="72" id="6MQ-cc-xSO"/>
@@ -506,6 +519,7 @@
         <image name="high.png" width="804" height="181"/>
         <image name="new.png" width="804" height="182"/>
         <image name="play.png" width="805" height="182"/>
+        <image name="reset.png" width="805" height="182"/>
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>

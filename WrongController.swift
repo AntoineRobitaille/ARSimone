@@ -8,7 +8,6 @@ class WrongController: UIViewController {
     //-------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        SingletonShared.singletonSharedInstance.manageScore()
         scoreLabel.text = SingletonShared.singletonSharedInstance.scoreForWrongInterface
     }
     
