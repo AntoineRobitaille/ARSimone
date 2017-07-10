@@ -22,17 +22,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="XRj-b5-MP2">
-                                <rect key="frame" x="50" y="84" width="274" height="119"/>
+                                <rect key="frame" x="75" y="103" width="225" height="99"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="X5z-5g-qcL"/>
-                                    <constraint firstAttribute="height" constant="119" id="cRw-ai-vUh"/>
+                                    <constraint firstAttribute="width" constant="225" id="X5z-5g-qcL"/>
+                                    <constraint firstAttribute="height" constant="99" id="cRw-ai-vUh"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120.png" translatesAutoresizingMaskIntoConstraints="NO" id="ywy-az-Zs1">
-                                <rect key="frame" x="137" y="211" width="100" height="100"/>
+                                <rect key="frame" x="140" y="208" width="94" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="7p3-8b-MaB"/>
-                                    <constraint firstAttribute="width" constant="100" id="IR6-jS-eiU"/>
+                                    <constraint firstAttribute="height" constant="94" id="7p3-8b-MaB"/>
+                                    <constraint firstAttribute="width" constant="94" id="IR6-jS-eiU"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -40,9 +40,9 @@
                         <constraints>
                             <constraint firstItem="ywy-az-Zs1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3hh-Ok-g2b"/>
                             <constraint firstItem="XRj-b5-MP2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V7Q-sM-PlF"/>
-                            <constraint firstItem="XRj-b5-MP2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="64" id="e0f-W5-GVh"/>
-                            <constraint firstItem="ywy-az-Zs1" firstAttribute="top" secondItem="XRj-b5-MP2" secondAttribute="bottom" constant="8" id="ru6-t4-pYU"/>
-                            <constraint firstItem="ywy-az-Zs1" firstAttribute="top" secondItem="XRj-b5-MP2" secondAttribute="bottom" constant="8" id="y6E-kc-h2o"/>
+                            <constraint firstItem="XRj-b5-MP2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="83" id="e0f-W5-GVh"/>
+                            <constraint firstItem="ywy-az-Zs1" firstAttribute="top" secondItem="XRj-b5-MP2" secondAttribute="bottom" constant="6" id="ru6-t4-pYU"/>
+                            <constraint firstItem="ywy-az-Zs1" firstAttribute="top" secondItem="XRj-b5-MP2" secondAttribute="bottom" constant="6" id="y6E-kc-h2o"/>
                         </constraints>
                     </view>
                 </viewController>
