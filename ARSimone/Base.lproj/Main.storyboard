@@ -58,10 +58,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F79-vh-9o5">
-                                <rect key="frame" x="86" y="281" width="203" height="105"/>
+                                <rect key="frame" x="86" y="262" width="203" height="143"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fom-qy-jse">
-                                <rect key="frame" x="85" y="281" width="204" height="105"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fom-qy-jse">
+                                <rect key="frame" x="85" y="262" width="204" height="143"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuI-A3-5G7">
                                         <rect key="frame" x="0.0" y="0.0" width="204" height="27"/>
@@ -70,7 +70,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4an-Yb-JSv">
-                                        <rect key="frame" x="0.0" y="57" width="204" height="48"/>
+                                        <rect key="frame" x="0.0" y="37" width="204" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="204" id="Ni6-al-hqc"/>
                                             <constraint firstAttribute="height" constant="48" id="Wh6-26-mvD"/>
@@ -81,23 +81,23 @@
                                             <segue destination="URN-DD-rn0" kind="presentation" id="b2V-8G-VkD"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-yd-uK4">
+                                        <rect key="frame" x="0.0" y="95" width="204" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="4Hu-dF-0Vg"/>
+                                            <constraint firstAttribute="width" constant="204" id="PdY-Gr-xKr"/>
+                                        </constraints>
+                                        <state key="normal" image="reset.png"/>
+                                        <connections>
+                                            <action selector="resetHighscore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7e-e9-WOz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4an-Yb-JSv" firstAttribute="centerX" secondItem="fom-qy-jse" secondAttribute="centerX" id="7tH-LQ-vrQ"/>
                                     <constraint firstItem="4an-Yb-JSv" firstAttribute="centerX" secondItem="fom-qy-jse" secondAttribute="centerX" id="tmj-w0-N4L"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-yd-uK4">
-                                <rect key="frame" x="85.5" y="394" width="204" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="4Hu-dF-0Vg"/>
-                                    <constraint firstAttribute="width" constant="204" id="PdY-Gr-xKr"/>
-                                </constraints>
-                                <state key="normal" image="reset.png"/>
-                                <connections>
-                                    <action selector="resetHighscore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7e-e9-WOz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REN-VR-pej">
                                 <rect key="frame" x="112" y="614" width="151" height="33"/>
                                 <constraints>
@@ -122,14 +122,12 @@
                             <constraint firstItem="REN-VR-pej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NaD-Sz-kgr"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQ1-ci-n1O"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgR-DI-tyO"/>
-                            <constraint firstItem="cRV-yd-uK4" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="bottom" constant="8" id="h5e-2i-geT"/>
                             <constraint firstItem="Pxt-1t-D1z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iPE-P8-iZ0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="REN-VR-pej" secondAttribute="bottom" constant="20" id="jds-bZ-mFQ"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="top" id="kDX-WH-ffb"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lGJ-5n-ERW"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nEH-nS-PWT"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8b-yE-wje"/>
-                            <constraint firstItem="cRV-yd-uK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSk-K6-rgG"/>
                             <constraint firstAttribute="trailing" secondItem="dUr-8C-iKE" secondAttribute="trailing" id="vKV-ln-GuG"/>
                         </constraints>
                     </view>
