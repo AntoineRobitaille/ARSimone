@@ -98,6 +98,20 @@
                                     <action selector="resetHighscore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7e-e9-WOz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REN-VR-pej">
+                                <rect key="frame" x="112" y="614" width="151" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Mp8-NZ-MQf"/>
+                                    <constraint firstAttribute="width" constant="151" id="fSZ-Gb-pGZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="18"/>
+                                <state key="normal" title="marioGENEAU.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToWebPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwF-ld-ls3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -105,10 +119,12 @@
                             <constraint firstItem="F79-vh-9o5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="3pr-ad-AiC"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="bottom" secondItem="fom-qy-jse" secondAttribute="bottom" id="CVu-fe-Rgx"/>
                             <constraint firstItem="fom-qy-jse" firstAttribute="centerX" secondItem="dUr-8C-iKE" secondAttribute="centerX" id="LIM-mY-rTJ"/>
+                            <constraint firstItem="REN-VR-pej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NaD-Sz-kgr"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQ1-ci-n1O"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgR-DI-tyO"/>
                             <constraint firstItem="cRV-yd-uK4" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="bottom" constant="8" id="h5e-2i-geT"/>
                             <constraint firstItem="Pxt-1t-D1z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iPE-P8-iZ0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="REN-VR-pej" secondAttribute="bottom" constant="20" id="jds-bZ-mFQ"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="top" secondItem="fom-qy-jse" secondAttribute="top" id="kDX-WH-ffb"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lGJ-5n-ERW"/>
                             <constraint firstItem="F79-vh-9o5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nEH-nS-PWT"/>
@@ -123,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="138"/>
+            <point key="canvasLocation" x="-335.19999999999999" y="137.18140929535232"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="hhX-Bm-2SF">
