@@ -108,15 +108,35 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="uAU-gn-pQW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GqW-H8-8GK"/>
+                            <constraint firstItem="uAU-gn-pQW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="MjI-wB-31h"/>
                             <constraint firstItem="REN-VR-pej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NaD-Sz-kgr"/>
+                            <constraint firstItem="uAU-gn-pQW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UtT-rV-QOV"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgR-DI-tyO"/>
                             <constraint firstItem="uAU-gn-pQW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="hDG-8c-0Ms"/>
                             <constraint firstItem="Pxt-1t-D1z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iPE-P8-iZ0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="REN-VR-pej" secondAttribute="bottom" constant="20" id="jds-bZ-mFQ"/>
                             <constraint firstItem="dUr-8C-iKE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lGJ-5n-ERW"/>
+                            <constraint firstItem="uAU-gn-pQW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nUf-ed-3Xk"/>
                             <constraint firstAttribute="trailing" secondItem="dUr-8C-iKE" secondAttribute="trailing" id="vKV-ln-GuG"/>
                             <constraint firstItem="uAU-gn-pQW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vRM-El-Xpd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MjI-wB-31h"/>
+                                <exclude reference="UtT-rV-QOV"/>
+                                <exclude reference="nUf-ed-3Xk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="GqW-H8-8GK"/>
+                                <include reference="MjI-wB-31h"/>
+                                <include reference="UtT-rV-QOV"/>
+                                <exclude reference="hDG-8c-0Ms"/>
+                                <include reference="nUf-ed-3Xk"/>
+                                <exclude reference="vRM-El-Xpd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="highscoreLabel" destination="kuI-A3-5G7" id="fA8-tM-sPO"/>
@@ -432,7 +452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0f-75-pf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="137"/>
+            <point key="canvasLocation" x="393" y="137"/>
         </scene>
         <!--Wrong Controller-->
         <scene sceneID="Xvf-Cx-xys">
@@ -513,9 +533,29 @@
                             <constraint firstAttribute="trailing" secondItem="in2-Ra-mNB" secondAttribute="trailing" id="D3z-wI-EeM"/>
                             <constraint firstItem="UYQ-gn-Sc6" firstAttribute="centerY" secondItem="9tO-qB-IQF" secondAttribute="centerY" id="Fv3-zY-YZU"/>
                             <constraint firstItem="in2-Ra-mNB" firstAttribute="top" secondItem="9tO-qB-IQF" secondAttribute="top" id="Nrd-cX-bY8"/>
+                            <constraint firstItem="UYQ-gn-Sc6" firstAttribute="width" secondItem="9tO-qB-IQF" secondAttribute="width" multiplier="0.4" id="PBA-fh-Dgw"/>
+                            <constraint firstItem="UYQ-gn-Sc6" firstAttribute="centerY" secondItem="9tO-qB-IQF" secondAttribute="centerY" id="g54-3g-l5I"/>
+                            <constraint firstItem="UYQ-gn-Sc6" firstAttribute="centerX" secondItem="9tO-qB-IQF" secondAttribute="centerX" id="kxp-OZ-abs"/>
                             <constraint firstItem="in2-Ra-mNB" firstAttribute="leading" secondItem="9tO-qB-IQF" secondAttribute="leading" id="muE-zR-sE2"/>
                             <constraint firstItem="in2-Ra-mNB" firstAttribute="top" secondItem="9tO-qB-IQF" secondAttribute="top" id="rRu-Xo-Yb5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PBA-fh-Dgw"/>
+                                <exclude reference="g54-3g-l5I"/>
+                                <exclude reference="kxp-OZ-abs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="64z-yu-SqY"/>
+                                <exclude reference="CQb-XB-cnA"/>
+                                <exclude reference="Fv3-zY-YZU"/>
+                                <include reference="PBA-fh-Dgw"/>
+                                <include reference="g54-3g-l5I"/>
+                                <include reference="kxp-OZ-abs"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="Wuk-aa-h1w" id="JJa-Nl-PMp"/>
@@ -523,7 +563,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ya-c5-YjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="142"/>
+            <point key="canvasLocation" x="1106" y="136"/>
         </scene>
     </scenes>
     <resources>
